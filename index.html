@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    
+    <nav id="desktop-nav">
+        <div class="logo">Kogilathota Vijay Reddy</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#coding">Profiles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Kogilathota Vijay Reddy</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#coding" onclick="toggleMenu()">Profiles</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assests/image-modified.png" alt="Vijay Reddy profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <p class="title">K. Vijay Reddy</p>
+            <p class="section__text__p2">Backend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assests/Vijay Reddy .pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+        </div>
+        <div>
+            <div id="socials-container">
+                <img src="./assests/linkedin.png"
+                 alt="My LinkedIn profile"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/kogilathota-vijay-reddy-062224193/'"/>
+                <img src="./assests/github.png"
+                 alt="My Github profile"
+                class="icon" 
+                onclick="location.href='https://github.com/Vijay-948'"/>
+
+
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container"> 
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assests/experience.png" alt="Experience icon"
+                        class="icon"/>
+                        <h3>Experience</h3>
+                        <p> Comany: Epam <br/> From Jan 2023-May 2023 <br/>Java Developer Trainee <br/> Technologies Learnt: Backend Development, SpringBoot, Git, MySQL</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assests/education.png" alt="Education icon"
+                        class="icon"/>
+                        <h3>Education</h3>
+                        <p>B.Tech Computer Science & Engineering <br />Lovely Professional University (Punjab, Jalandhar)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am an ambitious and motivated student, I am eager to kick-start my career in the field of
+                        software engineering. I am excited about applying for the position of a fresher in Software Engineering,
+                        where I can explore and learn more about technologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon"
+        class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="experience-icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>Html</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="experience-icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="experience-icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                       
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="experience-icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="experience-icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>Data Structure</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="experience-icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>Spring Boot</h3>
+                                <p>Intermediate</p>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="experience-icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="experience-icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <!-- <article>
+                            <img src="./assests/checkmark.png" 
+                            alt="experience-icon"
+                             class="icon"
+                            />
+                            <div>
+                                <h3>Angular</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon"
+        class="icon arrow" onclick="location.href='./#projects'"/>
+    </section> 
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <!-- <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assests/ProjectOne.png" alt="Project 1" class="project-img"/>
+                        <h2 class="experience-sub-title project-title">MovieTime Web Application <br/>Frontend Development</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Vijay-948/movietime'">Github</button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://vijay-948.github.io/movietime/'">Live Demo</button>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assests/ProjectTwo.png" alt="Project 1" class="project-img"/>
+                        <h2 class="experience-sub-title project-title" style="text-align: center;">Transaction Management System Backend Development</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Vijay-948/Transaction-Management-System'">Github</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assests/Project3.png" alt="Project 1" class="project-img"/>
+                        <h2 class="experience-sub-title project-title" style="text-align: center;">Tic-Tac-Toe Game  Java Swing</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Vijay-948/TIC-TAC-TOE'">Github</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon"
+        class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+
+    <section id="coding">
+        <p class="section__text__p1">Problem Solving</p>
+        <h1 class="title">Coding profiles</h1>
+        <div class="coding-info-upper-container">
+            <div class="coding-info-container">
+                <img src="./assests/leetcode.png" alt="GeeksForGeeks icon" class="icon leetcode-icon leetcode-icon"/>
+                <p><a href="https://leetcode.com/vijay_948/">Leetcode</a></p>
+            </div>
+            <div class="coding-info-container">
+                <img src="./assests/GeeksforGeeks.png" alt="GeeksForGeeks icon" class="icon coding-icon"/>
+                <p><a href="https://auth.geeksforgeeks.org/user/vijay948">GeeksforGeeks</a></p>
+            </div>
+            <div class="coding-info-container">
+                <img src="./assests/Hackerrank.png" alt="GeeksForGeeks icon" class="icon coding-icon"/>
+                <p><a href="https://www.hackerrank.com/11902545_Vijay?hr_r=1">HackerRank</a></p>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon"
+        class="icon arrow" onclick="location.href='./#coding'"/>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assests/contacting.png" alt="Mobile icon" class="icon contact-icon mobile-icon"/>
+                <p><a href="tel:+1234567890">+91 6305075608</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assests/gmail.png" alt="Email icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:kvijayreddy948@gmail.com">kvijayreddy948@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assests/linkedin.png" alt="LinkedIn icon" class="icon contact-icon "/>
+                <p><a href="https://www.linkedin.com/in/kogilathota-vijay-reddy-062224193/">LinkedIn</a></p>
+            </div>
+            
+        </div>
+    </section>
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#coding">Profiles</a></li>
+                    <li><a href="#contact">Contact</a></li>
+        
+                </ul>
+
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Vijay Reddy. All Rights Reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
